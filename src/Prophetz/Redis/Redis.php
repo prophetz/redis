@@ -13,7 +13,7 @@ class Redis
      * Redis constructor.
      * @param $server
      */
-    protected function __construct($server)
+    public function __construct($server)
     {
         $this->setInstance(new \Redis());
         $this->setServer($server);
